@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and semantic HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Forms and semantic HTML</h1>
+        <p>
+            Using semantic HTML elements to create forms.
+        </p>
+        <p>
+            Note: This page is for demonstration purposes only and does not process form submissions.
+        </p>
+        <nav>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN Web Docs - HTML Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h2>Forms and semantic HTML</h2>
+<form action="https://google.com/search" 
+method="GET">
+<p>
+    <label for="search">Search Google</label>
+    <input type="text" id="search" name="q" placeholder="Input text" required>
+</p>
+<p>
+    <button type="submit">Search</button>
+</p>
+
+
+</form>
+
+
+<form>
+<p>
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="Enter your name" required>
+</p>
+
+<p>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+</p>
+
+<p>
+<label for="password">Password</label>
+<input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+</p>
+<p>
+    <button type="submit">Submit</button>
+</p>
+
+
+</form>
+<div>Pick a color:</div>
+<p>
+    <input type="radio" id="orange" name="options" value="orange" checked>
+    <label for="orange">Orange</label>
+</p>
+
+<p>
+    <input type="radio" id="Yellow" name="options" value="yellow">
+    <label for="yellow">Yellow</label>
+</p>
+<form>
+
+</form>
+
+</main> 
+
+<footer>
+    <p>&copy; 2026 Artyom Kim</p>
+    <p>For more information, visit the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN Web Docs - HTML Forms</a></p>
+</footer>
+</body>
+</html>
