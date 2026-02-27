@@ -25,7 +25,7 @@ main {
 .first {
     
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 540;
     color: #7B8A92;    
     margin-left: 100px;
     margin-top: 120px;
@@ -55,22 +55,24 @@ main {
     }
 .register {
     margin-top: 70px;
+    margin-bottom: 10px;
 }
 .facebook {
     width: 20px; 
     }
 .font {
     font-size: 10px;
-    
 }    
 .facebook1 {
     margin-top: 50px;
     margin-left: 100px;
     padding: 10px;
-    padding-right: 120px;
+    padding-right: 70px;
     background-color: #255A9B;
     color: white;
-    
+     }
+     .facebook2 {
+
      }
 .linkedid {
     width: 10px;
@@ -78,16 +80,25 @@ main {
 .linkedid1 {
     margin-left: 50px;
     padding: 10px;
-    padding-right: 120px;
+    padding-right: 50px;
     background-color: #0076B6;
     color: #ffffff;
      }
-.line {
-    background-color: black;
-    padding: 0.1px;
-    margin-top: 40px;
-    margin-left: 200px;
-    width: 100px;
-    display: flex;
-    justify-content: flex-start;
+
+.button {
+    background-color: #0076B6 ;
+    border: #0076B6;
+    color: #ffffff;
 }
+.button1 {
+    background-color: #255A9B ;
+    border: #255A9B;
+    color: #ffffff;
+}
+input[type="email"] {
+    margin-left: 100px;
+    margin-top: 100px;
+    border-radius: 0%;
+    border-width: 1px;
+    border: #EEEEEE;
+}  
