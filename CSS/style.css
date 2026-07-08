@@ -1,49 +1,3 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    background-color: #EFF6FF;
-    font-family: 'Barlow-Regular';
-    color: #2A4A5C;
-    
-     }
-main {
-    margin-left: 450px;
-    margin-right: 450px;
-     }
-.image {
-    display: flex;
-    background-color: white;
-    margin-right: 300px;
-    margin-top: 100px; 
-      }
-.logo {
-    position: absolute;
-    block-size: 40px;
-    margin: 30px;
-     }
-.first {
-    
-    font-size: 30px;
-    font-weight: 540;
-    color: #7B8A92;    
-    margin-left: 100px;
-    margin-top: 120px;
-    margin-bottom: 10px;
-
-}
-.second {
-    margin-top: 25px;
-    margin-left: 100px;
-
-}
-.background {
-    width: 750px;
-     }
-.rightside {
-    width: 750px;
-}
-
 @font-face {
     font-family: 'Barlow-Regular';
     src: local('Barlow-Regular');
@@ -53,52 +7,162 @@ main {
     font-stretch: normal;
     font-variant: normal;
     }
+    body {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #EFF6FF;
+    font-family: 'Barlow-Regular';
+    color: #2A4A5C;
+     }
+main {
+    margin: 80px;
+    display: flex;
+    background-color: white;
+    
+     }
+.image {
+    display: flex;
+    background-color: white;
+    
+      }
+.logo {
+    position: absolute;
+    block-size: 40px;
+    margin: 30px;
+     }
+.title {
+    font-size: 30px;
+    font-weight: 500;
+    color: #2A4A5C;
+    margin-bottom: 30px;
+}
+.subtitle {
+font-size: 20px;
+color: #7B8A92;
+}
+  
+.background {
+    width: 750px;
+     }
+/* .rightside {
+    width: 700px;
+    padding: 80px;
+}
+
+
 .register {
-    margin-top: 70px;
-    margin-bottom: 10px;
-}
-.facebook {
-    width: 20px; 
-    }
-.font {
-    font-size: 10px;
-}    
-.facebook1 {
     margin-top: 50px;
-    margin-left: 100px;
-    padding: 10px;
-    padding-right: 70px;
-    background-color: #255A9B;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    border: none;
     color: white;
-     }
-     .facebook2 {
+    
+}
+.reg-button {
+padding: 10px 50px;
+background-color: #255A9B;
+color: white;
 
-     }
-.linkedid {
-    width: 10px;
-     }
-.linkedid1 {
-    margin-left: 50px;
+}
+.reg-button1 {
+padding: 10px 50px;
+background-color: #0076B6;
+color: white;    
+}
+.email {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    color: #AFAFAF;
+    border: #eeeeee;
+    display: flex;
+    gap: 50px;
+    
+}
+input {
+    height: 40px;
+    width: 270px;
     padding: 10px;
-    padding-right: 50px;
-    background-color: #0076B6;
-    color: #ffffff;
-     }
 
-.button {
-    background-color: #0076B6 ;
-    border: #0076B6;
-    color: #ffffff;
 }
-.button1 {
-    background-color: #255A9B ;
-    border: #255A9B;
-    color: #ffffff;
+label {
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    padding: 10px 5px;
 }
-input[type="email"] {
-    margin-left: 100px;
-    margin-top: 100px;
-    border-radius: 0%;
+.knopka {
+    display: flex;
+} */
+* {
+    box-sizing: border-box;
+    font-family: Barlow-Regular, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.rightside {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0%;
+    padding: 50px;
+}
+.form-wrapper {
+    width: 100%;
+}
+.social-buttons {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 30px;
+    margin-top: 25px;
+}
+.reg-button {
+padding: 10px 50px;
+background-color: #255A9B;
+color: white;
+border: 0;
+
+}
+.reg-button1 {
+padding: 10px 50px;
+background-color: #0076B6;
+color: white;
+border: 0;    
+} 
+.or-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0; 
+  color: #666;    
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.or-separator::before,
+.or-separator::after {
+  content: "";
+  flex: 1; 
+  border-bottom: 1px solid #ccc; 
+}
+
+
+.or-separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.or-separator:not(:empty)::after {
+  margin-left: .25em;
+}
+.input-field {
+    flex: 1 1 0%;
     border-width: 1px;
-    border: #EEEEEE;
-}  
+    border-style: solid;
+    border-color: rgb(224, 224, 224);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 8px 12px;
+    background: rgb(255, 255, 255);
+}

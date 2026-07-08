@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f4f9; /* Светло-голубой фон всей страницы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Основной контейнер-карточка */
+.main-container {
+    display: flex;
+    width: 1000px;
+    height: 650px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+/* Левая панель с картинкой */
+.left-panel {
+    flex: 1;
+    background: #2b66ff url('https://raw.githubusercontent.com/Habsida-Projects/css-task/refs/heads/main/template.jpg') no-repeat left center;
+    background-size: cover; /* Чтобы картинка заполнила левую часть */
+    padding: 40px;
+    color: white;
+}
+
+/* Если вырезать чисто логотип, стили ниже оформят его */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo-sub {
+    font-size: 10px;
+    display: block;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+/* Правая панель с формой */
+.right-panel {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.form-wrapper {
+    width: 100%;
+}
+
+h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.subtitle {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Социальные кнопки */
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-social {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-fb { background-color: #2d60b3; }
+.btn-ln { background-color: #0077b5; }
+
+/* Разделитель OR */
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    color: #bbb;
+    font-size: 12px;
+}
+.divider::before, .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+/* Поля ввода */
+.input-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.input-field {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    background: #fff;
+}
+
+.input-field label {
+    display: block;
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 4px;
+}
+
+.input-field input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Радио-кнопки */
+h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.hint-text {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+
+.info-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    line-height: 12px;
+    color: #999;
+    font-style: normal;
+}
+
+/* Серая плашка с подсказкой */
+.tooltip-box {
+    background-color: #f7f9fc;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Чекбокс */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.checkbox-group a {
+    color: #2b66ff;
+    text-decoration: none;
+}
+
+/* Кнопка отправки формы */
+.btn-submit {
+    width: 100%;
+    background-color: #3b93ff;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #267ee6;
+}
